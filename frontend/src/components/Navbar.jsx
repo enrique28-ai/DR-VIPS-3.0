@@ -94,7 +94,8 @@ export default function Navbar() {
             </button>
 
             {open && (
-              <div className="absolute right-0 mt-2 w-44 rounded-md border border-gray-200 bg-white shadow-lg py-1" role="menu">
+              <div className="absolute right-0 top-full z-50 mt-2 w-48 rounded-xl bg-white shadow-xl ring-1 ring-black/5 py-1"
+                role="menu">
                 {!user?.isVerified && (
                   <button
                     onClick={() => {
